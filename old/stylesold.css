@@ -1,0 +1,67 @@
+body {
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar {
+  flex-grow: 1;
+  background-image: url(./assets/mountain-small.jpg);
+}
+
+.logo {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.main {
+  display: flex;
+  flex-grow: 2;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #e6e8eb;
+}
+
+.content {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.signup-form label {
+  width: 15rem;
+  margin-bottom: 2rem;
+}
+
+.signup-form input {
+  font-family: inherit;
+  font-size: 100%;
+}
+
+.submit-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.submit-section button {
+  width: 9rem;
+  font-size: 1.3rem;
+  box-shadow: 2px 2px 5px;
+  border-radius: 10%;
+}
+
+.submit-section a {
+  color: red;
+}

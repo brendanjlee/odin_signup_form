@@ -2,23 +2,56 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" , initial-scale=1.0">
+  <meta name="viewport" initial-scale=1.0">
+  <title>Sign-Up Form</title>
   <link rel="stylesheet" href="styles.css" />
   <script src="./script.js"></script>
-  <title>Mountaineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
   <div class="sidebar">
-    <img src="./assets/fabrice-villard-QrRSm-QbjW0-unsplash.jpg" />
+    <div class="logo">
+      <img src="./assets/odin-lined.png">
+      <h2>Sign-Up Form</h2>
+    </div>
   </div>
-  <div class="main">
-    <div class="header">
-      <p>Sign up today for the best and latest mountaineering news! Exclusive offers to members joining this month. Realize your dreams.</p>
+
+  <div class="content">
+    <div class="header-section">
+      <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up now to get started</p>
       <p>You know you want to</p>
     </div>
-    <div class="content"></div>
-    <div class="footer"></div>
+
+    <div class="form-section">
+        <p>Let's do this!</p>
+        <form class="signup-form" id="signup-form">
+          <label for="first_name">First Name
+            <input type="text" id="first_name" required>
+          </label>
+          <label for="last_name">Last Name
+            <input type="text" id="last_name" required>
+          </label>
+          <label for="user_email">Email
+            <input type="email" id="last_name" name="email" required>
+          </label>
+          <label for="phone_number">Phone Number
+            <input type="tel" id="phone_number" name="phone_number" pattern="[0-9]{10}" required>
+          </label>
+          <label for="user_password">Password
+            <input type="password" id="user_password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+          </label>
+          <label for="confirm_password">Confirm Password
+            <input type="password" id="confirm_password" required>
+          </label>
+        </form>
+    </div>
+
+    <div class="submit-section">
+      <button type="submit" form="signup-form">Create Account</button>
+      <p>Already have an account? <a>Sign in</a></p>
+    </div>
   </div>
 </body>
 </html>
